@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    const std::filesystem::path path { argv[1] };
+    const fs::path path { argv[1] };
     if (!fs::exists(path)) {
         std::cout << "Error: path does not exist.\n";
         return 1;
